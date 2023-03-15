@@ -14,3 +14,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZDOTDIR/plugin/z
 ln -s $PWD/zsh/zshrc $ZDOTDIR/.zshrc
 ln -s $PWD/zsh/zshalias $ZDOTDIR/.zshalias
 ln -s $PWD/zsh/zshpath $ZDOTDIR/.zshpath
+ln -s $PWD/nvim $HOME/.config/nvim 
+ln -s $PWD/i3 $HOME/.config/i3
+ln -s $PWD/i3blocks $HOME/.config/i3blocks
+ln -s $PWD/kitty $HOME/.config/kitty
+ln -s $PWD/ranger $HOME/.config/ranger
