@@ -1,0 +1,4 @@
+alias luamake=/home/bitscoder/.local/lua-language-server/3rd/luamake/luamake
+
+alias r='ranger'
+alias v='nvim'

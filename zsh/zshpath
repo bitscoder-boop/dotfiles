@@ -1,0 +1,24 @@
+export HISTFILE=$XDG_STATE_HOME/zsh/zsh_history
+export LESSHISTFILE=$XDG_STATE_HOME/less/history
+
+export ANDROID_HOME=$XDG_DATA_HOME/android
+export CARGO_HOME=$XDG_DATA_HOME/cargo
+export PATH=$CARGO_HOME/bin:$PATH
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
+export IPYTHONDIR=$XDG_CONFIG_HOME/ipython
+
+export PATH=$HOME/.local/nvim/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+
+# node PATH
+export PATH=$HOME/.local/node/bin:$PATH
+
+# rust PATH
+export PATH=$HOME/.cargo/bin:$PATH
+
+# flutter PATH
+export PATH=$HOME/.local/flutter/bin:$PATH
+
+# sdkmanager PATH 
+export PATH=$HOME/android-sdk/cmdline-tools/latest/bin:$PATH
