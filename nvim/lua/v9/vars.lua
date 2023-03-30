@@ -12,6 +12,7 @@ set.expandtab = true
 set.swapfile = false
 set.cursorline = true
 set.completeopt = {"menu", "menuone", "noselect"}
+-- set.mouse = ''
 vim.cmd [[silent! colorscheme desert]]
 
 
