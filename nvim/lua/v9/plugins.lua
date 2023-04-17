@@ -14,19 +14,32 @@ local packer_bootstrap = ensure_packer()
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+    use {'sonph/onehalf', rtp = 'vim'}
+    use 'preservim/tagbar'
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require('gitsigns').setup()
+        end
+    }
+    use {
+        'junegunn/fzf.vim',
+        requires = { 'junegunn/fzf', run = ':call fzf#install()' }
+    }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
     use {
-    "SmiteshP/nvim-navbuddy",
-    requires = {
-        "neovim/nvim-lspconfig",
-        "SmiteshP/nvim-navic",
-        "MunifTanjim/nui.nvim"
+        "SmiteshP/nvim-navbuddy",
+        requires = {
+            "neovim/nvim-lspconfig",
+            "SmiteshP/nvim-navic",
+            "MunifTanjim/nui.nvim"
+        }
     }
-}
     use 'lewis6991/impatient.nvim'
+    use 'lukas-reineke/indent-blankline.nvim'
     use 'ggandor/lightspeed.nvim'
     use 'SmiteshP/nvim-navic'
     use 'rcarriga/nvim-notify'
@@ -81,4 +94,6 @@ return require('packer').startup(function()
     -- Dart/Flutter
     use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
     use 'Nash0x7E2/awesome-flutter-snippets'
+    use 'nvim-lua/plenary.nvim'
+    use 'ThePrimeagen/harpoon'
 end)

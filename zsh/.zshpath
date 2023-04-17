@@ -12,7 +12,12 @@ export PATH=$HOME/.local/nvim/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
 # node PATH
-export PATH=$HOME/.local/node/bin:$PATH
+export PATH=$HOME/node/bin:$PATH
+
+
+# chezmoi
+export PATH=$HOME/bin:$PATH
+
 
 # rust PATH
 export PATH=$HOME/.cargo/bin:$PATH
