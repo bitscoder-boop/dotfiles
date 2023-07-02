@@ -25,3 +25,6 @@ source $ZDOTDIR/.zshalias
 source $ZDOTDIR/.zshvi
 
 source $ZDOTDIR/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ATUIN_NOBIND="true"
+eval "$(atuin init zsh)"
+bindkey '^o' _atuin_search_widget

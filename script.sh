@@ -6,18 +6,18 @@ ln -svf $PWD/zsh/.zshenv $HOME/.zshenv
 
 # after this we will have a XDOTDIR defined
 # clone the above repo inside plugin directory of ZDOTDIR
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZDOTDIR/plugin/zsh-syntax-highlighting/
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZDOTDIR/plugin/zsh-autosuggestions/
-git clone https://github.com/jeffreytse/zsh-vi-mode.git $ZDOTDIR/plugin/zsh-vi-mode
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZDOTDIR/plugin/zsh-syntax-highlighting/
+# git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZDOTDIR/plugin/zsh-autosuggestions/
+# git clone https://github.com/jeffreytse/zsh-vi-mode.git $ZDOTDIR/plugin/zsh-vi-mode
 
 # after clone is succcesful, link the .zshrc to $ZDOTDIR/.zshrc
 
-ln -s $PWD/zsh/.zshrc $ZDOTDIR/.zshrc
-ln -s $PWD/zsh/.zshalias $ZDOTDIR/.zshalias
-ln -s $PWD/zsh/.zshpath $ZDOTDIR/.zshpath
-ln -s $PWD/zsh/.zshvi $ZDOTDIR/.zshvi
-ln -s $PWD/nvim $HOME/.config/nvim 
-ln -s $PWD/i3 $HOME/.config/i3
-ln -s $PWD/i3blocks $HOME/.config/i3blocks
-ln -s $PWD/kitty $HOME/.config/kitty
-ln -s $PWD/ranger $HOME/.config/ranger
+ln -sf $PWD/zsh/.zshrc $ZDOTDIR/.zshrc
+ln -sf $PWD/zsh/.zshalias $ZDOTDIR/.zshalias
+ln -sf $PWD/zsh/.zshpath $ZDOTDIR/.zshpath
+ln -sf $PWD/zsh/.zshvi $ZDOTDIR/.zshvi
+ln -sf $PWD/nvim $HOME/.config/nvim 
+ln -sf $PWD/i3 $HOME/.config/i3
+ln -sf $PWD/i3blocks $HOME/.config/i3blocks
+ln -sf $PWD/kitty $HOME/.config/kitty
+ln -sf $PWD/ranger $HOME/.config/ranger
